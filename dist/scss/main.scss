@@ -4,6 +4,16 @@
 
 main{
     display: flex;
+    margin: 10vh auto;   
+}
+
+.pattern1{
+    width: 25vw;
+    background: $Light-Magenta;
+    height: 40vw;
+    margin: -10vh 0 0 0;
+    border-radius: 0 0 10em 10em;
+
 }
 
 .phone{
@@ -18,8 +28,7 @@ main{
 
     .chat-header{
         display: flex;
-        padding: 1em;
-        border: 1px solid red;
+        padding: 1em;        
         background: $Light-Magenta;
         border-radius: 1em 1em 0 0;
 
@@ -28,11 +37,22 @@ main{
             border-radius: 50%;
             border: 2px solid white;
         }
-
     }
-.booking{
-    width: 30vw;
-}
+
+        .chat-bg{
+            background: $Light-Grayish-Violet;
+        }
+        .booking{
+            width: 30vw;           
+            margin: 10vw 0 0 10vw ;
+        }
+        .pattern2{
+            width: 25vw;
+            background: $Light-Magenta;
+            height: 40vw;
+            margin: 0 0 -10vh 0;
+            border-radius: 10em 10em 0 0;
+        }
 
 
 
