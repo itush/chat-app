@@ -2,6 +2,40 @@
 @import 'responsive';
 
 
+main{
+    display: flex;
+}
+
+.phone{
+    width: 20vw;
+
+    .phone-speaker{
+        width: 10vw;
+        margin: 0 auto;
+        border-radius: 1em;
+    }
+}
+
+    .chat-header{
+        display: flex;
+        padding: 1em;
+        border: 1px solid red;
+        background: $Light-Magenta;
+        border-radius: 1em 1em 0 0;
+
+        #avatar{
+            max-width: 20%;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+
+    }
+.booking{
+    width: 30vw;
+}
+
+
+
 
  
 .attribution { font-size: 11px; text-align: center; }
