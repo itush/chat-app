@@ -1,10 +1,14 @@
 @import 'config';
 @import 'responsive';
 
-
+body{
+    background: $Light-Grayish-Violet;
+    min-height: 100vh;
+}
 main{
     display: flex;
     margin: 10vh auto;   
+    
 }
 
 .pattern1{
@@ -18,29 +22,64 @@ main{
 
 .phone{
     width: 20vw;
+    background: $White;
+    padding: 1em;
+    border-radius: 1em;
+    margin: 0 0 0 -4em;
 
     .phone-speaker{
         width: 10vw;
-        margin: 0 auto;
+        margin: -1em auto 0 auto;
         border-radius: 1em;
+        position: relative;
+        z-index: 5;
+        background: $White;
+        padding: 1em;
     }
 }
 
     .chat-header{
         display: flex;
+        align-items: center;
+        justify-content: space-between;
         padding: 1em;        
         background: $Light-Magenta;
         border-radius: 1em 1em 0 0;
+        position: relative;
+        margin: -1em 0 0 0;
+
+        .left-arrow{
+            border: solid $White;
+        border-width: 0 3px 3px 0;
+        padding: 3px;
+        display: inline-block;
+        transform: rotate(135deg);
+        }
 
         #avatar{
             max-width: 20%;
             border-radius: 50%;
             border: 2px solid white;
         }
+        .threedots{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .dot{
+            height: 3px;
+            width: 3px;
+            background-color:$White;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 2px;
+            
+        }
     }
 
         .chat-bg{
             background: $Light-Grayish-Violet;
+            border-radius: 0 0 1em 1em;
         }
         .booking{
             width: 30vw;           
