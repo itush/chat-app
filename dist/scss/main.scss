@@ -4,6 +4,7 @@
 body{
     background: $Light-Grayish-Violet;
     min-height: 100vh;
+    font-family: 'Rubik' sans-serif;
 }
 main{
     display: flex;
@@ -13,7 +14,7 @@ main{
 
 .pattern1{
     width: 25vw;
-    background: $Light-Magenta;
+    background: linear-gradient(45deg, $Light-Violet, $Light-Magenta);
     height: 40vw;
     margin: -10vh 0 0 0;
     border-radius: 0 0 10em 10em;
@@ -21,11 +22,11 @@ main{
 }
 
 .phone{
-    width: 20vw;
+    width: 30vw;
     background: $White;
     padding: 1em;
     border-radius: 1em;
-    margin: 0 0 0 -4em;
+    margin: 0 0 0 -8.5em;
 
     .phone-speaker{
         width: 10vw;
@@ -43,7 +44,7 @@ main{
         align-items: center;
         justify-content: space-between;
         padding: 2em 1em 1em 1em;        
-        background: $Light-Magenta;
+        background: linear-gradient(45deg, $Light-Violet, $Light-Magenta);
         border-radius: 1em 1em 0 0;
         position: relative;
         margin: -1em 0 0 0;
@@ -54,12 +55,17 @@ main{
                 font-size: .8em;
             }
         }
-        .left-arrow{
+        .arrow{
             border: solid $White;
         border-width: 0 3px 3px 0;
         padding: 3px;
-        display: inline-block;
-        transform: rotate(135deg);
+        display: inline-block;  
+        z-index: 10;  
+          
+        }
+        .left{
+            transform: rotate(135deg);
+            z-index: 10; 
         }
 
         #avatar{
@@ -87,6 +93,7 @@ main{
             background: $Light-Grayish-Violet;
             border-radius: 0 0 1em 1em;
             padding: .5em;
+            font-size: .7em;
             
 
             .walker-reply1, .walker-reply2, .walker-reply3{
@@ -94,8 +101,7 @@ main{
                 color: $Moderate-Violet;
                 border-radius: 1em;
                 width: 10vw;
-                padding: 1em;
-                font-size: .7em;
+                padding: 1em;               
                 margin: .5em 0;
             }
 
@@ -111,23 +117,23 @@ main{
             }
             .owner-reply2, .owner-reply3{
                 background: $White;
-                color: $Desaturated-Dark-Violet;             
+                color: $Desaturated-Dark-Violet;          
                 border-radius: 1em;
-                width: 10vw;
-                padding: 1em;
-                font-size: .7em;
-                margin: .5em 0em .5em 7em ;
+                max-width: 100%;
+                padding: 1em;                
+                margin: .5em 0em .5em 16em ;
                 justify-content: right;
             }
             .walker-reply4, .walker-reply5{
-                background: $Light-Magenta;
+                background: linear-gradient(45deg, $Light-Magenta, $Light-Violet);
                 color: $White;
-                padding: .5em;
+                padding: 1em;
                 border-radius: 1em;
                 margin: .5em 0;
             }
 
             #msg{
+                // position: relative;
                 color: $Grayish-Blue;
                 border-radius: 2em;
                 width: 100%;
@@ -136,25 +142,42 @@ main{
                 border: none;
             }
             button{
-                display: inline;
-                background: black;
+                // position: absolute;
+                background: $Very-Dark-Desaturated-Violet;
                 border-radius: 50%;
-                width: 1em;
+                width: 2em;
+                outline: none;
+                border: none;
                 padding: 1em;
-            }
+                margin: -1em 0 0 -3em;  
+                z-index: -5;                 
+            }            
 
         }
         .booking{
             width: 30vw;           
             margin: 10vw 0 0 10vw ;
             
+
+            h1{
+            color:$Very-Dark-Desaturated-Violet;
+            margin: 4em 0 0 0;
+            }
+
+            p{
+                color: $Dark-Grayish-Violet;
+                margin: 2em 0 0 0;
+            }
+            
         }
         .pattern2{
             width: 25vw;
-            background: $Light-Magenta;
-            height: 40vw;
-            margin: 0 0 -10vh 0;
+            position: absolute;
+            background:$Grayish-Blue;
+            height: 110vh;
+            margin: 2em 0 0 70em;
             border-radius: 10em 10em 0 0;
+            opacity: .5;
         }
 
 
