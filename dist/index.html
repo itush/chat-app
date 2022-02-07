@@ -6,24 +6,33 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/main.css">
+  
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
   </style>
 </head>
 <body>
   <main>
-    <section class="pattern1"></section>
+
+    <div class="main-bg">
+      <div class="pattern1"></div>
+      <div 
+      class="pattern2"></div>
+    </div>
+    
+    <div class="main-content">
+      
     <section class="phone">
       <div class="phone-speaker"></div>
 
-      <div class="chat-header">
-        <p><i class="left arrow"></i></p>
+      <div class="app-header">
+       <div class="inside-app-header"> <p><i class="left arrow"></i></p>
         
-      <img src="./images/avatar.jpg" alt="" id="avatar">
-      <p class="walker">
-        <strong>Samuel Green</strong><br>
-        <span>Available to Walk</span>
-      </p>
+        <img src="./images/avatar.jpg" alt="" id="avatar">
+        <p class="walker">
+          <strong>Samuel Green</strong><br>
+          <span>Available to Walk</span>
+        </p></div>
       <p class="threedots">
         <i class="dot"></i>
         <i class="dot"></i>
@@ -60,20 +69,20 @@
   <p class="walker-reply4">
     <input type="radio" id="30min" name="30min" value="30min">
     <label for="html">30 minute walk</label>
-  <strong>$29</strong>
+  <strong class="price1">$29</strong>
   </p>
 
   <p class="walker-reply5">
     <input type="radio" id="1hr" name="1hr" value="1hr">
     
     <label for="css">1 hour walk</label>
-  <strong>$49</strong>
+  <strong class="price2">$49</strong>
   
   </p>
   
   <label for="msg"></label>
   <input type="text" name="msg" id="msg" placeholder="Type a message…">
-  <button type="submit"></button>
+  <button type="submit"><p><i class="right arrow"></i></p></button>
 
 
 </div>
@@ -88,14 +97,15 @@
   your walker and book again all through the chat.
     </p>
   </section>
+    </div>
 
-  <section class="pattern2"></section>
+  
   </main>  
-  <!-- <footer>
+  <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Tushar Biswas</a>.
     </div>
-  </footer> -->
+  </footer>
 </body>
 </html>
