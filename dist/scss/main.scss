@@ -7,9 +7,7 @@ body{
     font-family: 'Rubik' sans-serif;
 }
 
-main{
-    // display: flex;
-    // margin: 10vh auto;   
+main{    
     .arrow{
         border: solid $White;
     border-width: 0 3px 3px 0;
@@ -34,7 +32,7 @@ main{
         display: flex;
         position: absolute;       
         width: 60vw;
-        margin: -90vh 0 0 20vw;
+        margin: -35em 0 0 17.5em;
     }
     
 }
@@ -42,8 +40,7 @@ main{
 .pattern1{
     width: 25vw;
     background: linear-gradient(45deg, $Light-Violet, $Light-Magenta);
-    height: 80vh;
-    // margin: -10vh 0 0 0;
+    height: 80vh;   
     border-radius: 0 0 10em 10em;
 }
 
@@ -52,7 +49,7 @@ main{
     position: relative; 
     background:$Grayish-Blue;
     height: 80vh;
-    margin: 20vh 0 0 0vh;
+    margin: 20vh 0 0 0;
     border-radius: 10em 10em 0 0;
     opacity: .2;
 }
@@ -62,18 +59,18 @@ main{
 .phone{
     width: 20vw;
     background: $White;
-    padding: 1em;
+    padding: .5em;
     border-radius: 1em;
-    // margin: 0 0 0 -8.5em;
+    
 
     .phone-speaker{
-        width: 10vw;
-        margin: -1em auto 0 auto;
+        width: 10vw;        
         border-radius: 1em;
         position: relative;
         z-index: 5;
         background: $White;
-        padding: 1em;
+        padding: .5em;
+        margin: -.5em auto 0 auto;
     }
 }
 
@@ -85,7 +82,7 @@ main{
         background: linear-gradient(45deg, $Light-Violet, $Light-Magenta);
         border-radius: 1em 1em 0 0;
         position: relative;
-        margin: -1em 0 0 0;
+        margin: -.5em 0 0 0;
 
         .inside-app-header{
             
@@ -201,7 +198,7 @@ main{
         }
         .booking{
             width: 30vw;           
-            margin: 10vh 0 0 10vw ;            
+            margin: 3em 0 0 10em ;            
 
             h1{
                 font-size: xx-large;
@@ -213,12 +210,9 @@ main{
                 color: $Dark-Grayish-Violet;
                 margin: 2em 0 0 0;
                 font-size: large;
-            }
-            
+            }            
         }
         
-
-
 
 
  
